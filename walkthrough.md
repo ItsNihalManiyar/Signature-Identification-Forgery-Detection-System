@@ -47,5 +47,32 @@ Open a terminal in the `/Users/nih5586/PyCharmMiscProject/ML_A8/` directory and 
    ```
 4. **Launch Streamlit App:**
    ```bash
-   streamlit run app.py
+   streamlit run advanced_app.py
    ```
+
+## 7. GitHub Deployment
+
+To push this project to GitHub, follow these instructions:
+
+1. **Verify Git Repository and Remote:**
+   Ensure your local repository is initialized and linked to your remote repository:
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   ```
+   *(Note: If `origin` already exists, you can update it using `git remote set-url origin <new-url>`).*
+
+2. **Commit Changes:**
+   Commit the prepared repository files (large files like dataset CSVs and `.h5` neural models will be automatically ignored by `.gitignore`):
+   ```bash
+   git add .
+   git commit -m "Configure project files and structure for GitHub release"
+   ```
+
+3. **Push to GitHub:**
+   Push your commits to the `main` branch:
+   ```bash
+   git push -u origin main
+   ```
+
+> [!TIP]
+> Since the dataset (`signatures/`, `processed_data/`, `dataset.csv`) and model files (`*.h5`) are ignored to keep the repository lightweight, anyone cloning the repository can run the pipeline sequentially (`preprocess_images.py` -> `create_dataset.py` -> `train_models.py`) to reproduce the trained weights.
