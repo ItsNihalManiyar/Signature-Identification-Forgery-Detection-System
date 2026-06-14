@@ -36,3 +36,8 @@ A professional-grade biometric authentication system developed using the CEDAR d
 - `advanced_app.py`: Feature-rich Streamlit dashboard.
 - `abstract.md`: Detailed technical project abstract.
 - `walkthrough.md`: Project guide and GitHub instructions.
+
+## Screenshorts 
+
+<img width="1470" height="956" alt="" src="https://github.com/user-attachments/assets/b63eb89f-e555-46cb-b812-64a1c7825960" />
+
